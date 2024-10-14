@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Dicoding Event</string>
+    <string name="title_home">Home</string>
+    <string name="title_upcoming">Upcoming Events</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="title_finished">Finished Events</string>
+    <string name="finished">Finished</string>
+    <string name="colon">&#160; : &#160;</string>
+    <string name="owner">Penyelenggara</string>
+    <string name="registrants">Registrasi</string>
+    <string name="quota">Sisa Kuota</string>
+    <string name="category">Kategori</string>
+    <string name="beginTime">Dimulai</string>
+    <string name="description">Deskripsi</string>
+    <string name="location">Tempat</string>
+    <string name="registrasi">Registrasi</string>
+    <string name="hintSearch">Masukan Kata Kunci</string>
+</resources>
