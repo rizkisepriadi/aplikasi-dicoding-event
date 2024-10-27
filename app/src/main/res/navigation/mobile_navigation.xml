@@ -7,32 +7,38 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.example.dicodingevent.ui.home.HomeFragment"
+        android:name="com.example.dicodingevent.view.home.HomeFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" >
-        <action
-            android:id="@+id/action_navigation_home_to_searchActivity"
-            app:destination="@id/searchActivity" />
-    </fragment>
+        tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/navigation_upcoming"
-        android:name="com.example.dicodingevent.ui.upcoming.UpcomingFragment"
+        android:name="com.example.dicodingevent.view.upcoming.UpcomingFragment"
         android:label="@string/title_upcoming"
         tools:layout="@layout/fragment_upcoming"/>
     <fragment
         android:id="@+id/navigation_finished"
-        android:name="com.example.dicodingevent.ui.finished.FinishedFragment"
+        android:name="com.example.dicodingevent.view.finished.FinishedFragment"
         android:label="@string/title_finished"
         tools:layout="@layout/fragment_finished" />
     <activity
         android:id="@+id/detailEventActivity"
-        android:name="com.example.dicodingevent.ui.DetailEventActivity"
-        android:label="activity_detail_event"
+        android:name="com.example.dicodingevent.view.detail.DetailEventActivity"
+        android:label="@string/title_favorite"
         tools:layout="@layout/activity_detail_event" />
     <activity
         android:id="@+id/searchActivity"
-        android:name="com.example.dicodingevent.ui.SearchActivity"
-        android:label="activity_search"
+        android:name="com.example.dicodingevent.view.search.SearchActivity"
+        android:label="Search"
         tools:layout="@layout/activity_search" />
+    <fragment
+        android:id="@+id/navigation_favorite"
+        android:name="com.example.dicodingevent.view.favorite.FavoriteFragment"
+        android:label="@string/title_favorite"
+        tools:layout="@layout/fragment_favorite" />
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.example.dicodingevent.view.settings.SettingsFragment"
+        android:label="@string/title_settings"
+        tools:layout="@layout/fragment_settings" />
 
 </navigation>

@@ -1,7 +1,8 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
     android:fillViewport="true">
 
     <LinearLayout
@@ -9,11 +10,29 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/imageView"
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="250dp"
-            tools:src="@drawable/image2" />
+            android:layout_height="250dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:src="@drawable/image2" />
+
+            <ImageButton
+                android:id="@+id/favoriteButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|top"
+                android:layout_margin="8dp"
+                android:backgroundTint="@android:color/transparent"
+                android:contentDescription="@string/favorite"
+                android:src="@drawable/ic_favorite_24"
+                app:tint="@color/pink"
+                android:background="@color/white"
+                />
+        </FrameLayout>
 
         <ProgressBar
             android:id="@+id/progressBar"
@@ -28,10 +47,10 @@
             android:id="@+id/tvName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="8dp"
             android:fontFamily="@font/inter_bold"
             android:text="DevCoach 154: ML Android | MediaPipe: Paket Lengkap dari Google untuk Terapkan ML di Android"
-            android:textSize="16sp"
-            android:layout_margin="8dp" />
+            android:textSize="16sp" />
 
         <TableLayout
             android:id="@+id/tableLayout"
@@ -214,19 +233,19 @@
             android:id="@+id/description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Deskripsi"
-            android:textSize="14sp"
-            android:fontFamily="@font/inter_bold"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp" />
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/inter_bold"
+            android:text="Deskripsi"
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/tvDescription"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Halooaofeoofeafa"
+            android:layout_marginStart="16dp"
             android:fontFamily="@font/inter"
-            android:layout_marginStart="16dp" />
+            android:text="Halooaofeoofeafa" />
 
         <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
             android:id="@+id/btnRegist"
